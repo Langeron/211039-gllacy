@@ -42,7 +42,7 @@
                 <label class="visually-hidden" for="password">Пароль</label>
           		  <input type="password" name="password" id="password" placeholder="Пароль">
           		</p>
-          		  <input class="btn btn-login-form" type="submit" value="Войти">
+          		  <input class="btn login-form-btn" type="submit" value="Войти">
           	</form>
             <a href="#">Забыли пароль?</a>
             <a href="#">Новая регистрация</a>
@@ -77,12 +77,12 @@
     		<div class="offer-1">
     			<h3>Малинка даром!</h3>
     			<p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-    			<a class="btn btn-offer" href="#">Хочу варенье!</a>
+    			<a class="btn offer-btn" href="#">Хочу варенье!</a>
     		</div>
     		<div class="offer-2">
     			<h3>Шоколадки даром!</h3>
     			<p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-    			<a class="btn btn-offer" href="#">Хочу шоколадки!</a>
+    			<a class="btn offer-btn" href="#">Хочу шоколадки!</a>
     		</div>
     	</section>
     	
@@ -101,7 +101,7 @@
     					</a>
     				</p>
     				<p class="catalog-item-price">
-    					<b>310 ₽/ <span class="kilo">кг</span></b>
+    					310 ₽/ <span class="kilo">кг</span>
     				</p>
     			</li>
     			<li class="catalog-item">
@@ -116,7 +116,7 @@
     					</a>
     				</p>
     				<p class="catalog-item-price">
-    					<b>380 ₽/ <span class="kilo">кг</span></b>
+    					380 ₽/ <span class="kilo">кг</span>
     				</p>
     			</li>
     			<li class="catalog-item">
@@ -131,7 +131,7 @@
     					</a>
     				</p>
     				<p class="catalog-item-price">
-    					<b>355 ₽/ <span class="kilo">кг</span></b>
+    					355 ₽/ <span class="kilo">кг</span>
     				</p>
     			</li>
     			<li class="catalog-item">
@@ -146,7 +146,7 @@
     					</a>
     				</p>
     				<p class="catalog-item-price">
-    					<b>415 ₽/ <span class="kilo">кг</span></b>
+    					415 ₽/ <span class="kilo">кг</span>
     				</p>
     			</li>
     		</ul>
@@ -173,7 +173,7 @@
     		<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
     	  <form action="#" method="post">
     	  	<input type="email" name="email" placeholder="Электронная почта">
-    	  	<input class="btn btn-subscription" type="submit" value="Отправить">
+    	  	<input class="btn subscription-btn" type="submit" value="Отправить">
     	  </form>
     	</div>
 
@@ -187,27 +187,7 @@
     				<b>8 812 450-25-25</b><br>
     				(с 10 до 20 ежедневно)
     			</p>
-    			<a class="btn btn-feedback" href="#">Форма обратной связи</a>
-    			<div class="feedback-form">
-    			  <span class="feedback-text" >Мы обязательно вам ответим!</span>
-    				<form action="#" method="post" >
-    				  <p class="feedback-item">
-    					  <label class="visually-hidden">Имя
-    					    <input type="text" name="name" placeholder="Как вас зовут?">
-    					  </label>
-    					</p>
-    					<p class="feedback-item">
-    					  <label class="visually-hidden">Почта
-                  <input type="text" name="mail" placeholder="Ваша почта для ответа?" >
-    					  </label>
-    					</p>
-    					<p class="feedback-item">
-    					  <textarea placeholder="Напишите что-нибудь..."></textarea>
-    					</p>
-    					<input class="btn btn-feedback" type="submit" value="Отправить">
-    					<span class="form-close">x</span>
-    				</form>
-    			</div>
+    			<a class="btn address-btn" href="#">Форма обратной связи</a>
     		</div>
     	</div>
     </main>
@@ -234,5 +214,26 @@
     		Сделано в <a href="#">HTML Academy</a> © 2017
     	</p>
     </footer>
+
+    <div class="feedback-form">
+      <span class="feedback-text" >Мы обязательно вам ответим!</span>
+    	<form action="#" method="post" >
+    	  <p class="feedback-item">
+    		  <label class="visually-hidden">Имя
+    			  <input type="text" name="name" placeholder="Как вас зовут?">
+    			</label>
+    		</p>
+    		<p class="feedback-item">
+    		  <label class="visually-hidden">Почта
+            <input type="text" name="mail" placeholder="Ваша почта для ответа?" >
+    			</label>
+    		</p>
+    		<p class="feedback-item">
+    			<textarea placeholder="Напишите что-нибудь..."></textarea>
+    		</p>
+    		  <input class="btn feedback-btn" type="submit" value="Отправить">
+    			<span class="form-close">x</span>
+    	</form>
+    </div>
   </body>
 </html>
