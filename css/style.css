@@ -2,20 +2,20 @@ body {
 	font-size: 16px;
 	line-height: 22px;
 	color: #323232;
-	font-family: "Roboto", "Arial" bold;
+	font-family: "Roboto", "Arial", sans-serif;
+	font-weight: bold;
 }
 
 .features h1 {
 	font-size: 24px;
 	line-height: 30px;
 	color: #323232;
-	font-family: "Roboto", "Arial", medium;
+	font-weight: medium;
 }
- 
+
 .slider h2 {
 	font-size: 60px;
 	line-height: 60px;
 	color: #ffffff;
-	font-family: "Roboto", "Arial", bold;
 }
 
