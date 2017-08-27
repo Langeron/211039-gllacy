@@ -9,47 +9,53 @@
 </head>
 <body>
 	<header class="main-header">
-		<div class="container">			
-			<nav class="main-navigation">
-				<img src="img/logo.svg" width="154" height="64" alt="Логотип «Gllacy»">
-				<ul class="site-navigation">
-					<li class="navigation-item">
-						<a href="catalog.html"><span>Каталог</span></a>
-						<ul class="dropdown">
-							<li><a href="#">Новинки</a></li>
-							<li><a href="#">Сливочное</a></li>
-							<li><a href="#">Щербеты</a></li>
-							<li><a href="#">Фруктовый лед</a></li>
-							<li><a href="#">Мелорин</a></li>
-						</ul>
+		<div class="container">
+			<div class="header-navigation-wrap">
+				<nav class="main-navigation">
+					<img src="img/logo.svg" width="154" height="64" alt="Логотип «Gllacy»">
+					<ul class="site-navigation">
+						<li class="navigation-item">
+							<a href="catalog.html"><span>Каталог</span></a>
+							<ul class="dropdown">
+								<li><a href="#">Новинки</a></li>
+								<li><a href="#">Сливочное</a></li>
+								<li><a href="#">Щербеты</a></li>
+								<li><a href="#">Фруктовый лед</a></li>
+								<li><a href="#">Мелорин</a></li>
+							</ul>
+						</li>
+						<li class="navigation-item"><a href="#"><span>Доставка и оплата</span></a></li>
+						<li class="navigation-item"><a href="#"><span>О компании</span></a></li>
+					</ul>
+				</nav>
+				<ul class="user-navigation">
+					<li class="header-search">
+						<a href="#">Поиск</a>
+						<form class="header-search-form" action="#" method="get">
+							<input type="search" name="search" placeholder="Что ищем?">
+						</form>
 					</li>
-					<li class="navigation-item"><a href="#"><span>Доставка и оплата</span></a></li>
-					<li class="navigation-item"><a href="#"><span>О компании</span></a></li>
+					<li class="header-login">
+						<a href="#">Вход</a>
+						<form class="header-login-form" action="#" method="post">
+							<label class="visually-hidden" for="login">Электронная почта</label>
+							<input type="text" name="login" id="login" placeholder="Электронная почта">
+							<label class="visually-hidden" for="password">Пароль</label>
+							<input type="password" name="password" id="password" placeholder="Пароль">
+							<div class="header-login-wrap">
+								<button class="btn login-form-btn" type="submit">Войти</button>
+								<div class="header-link-wrap">
+									<a href="#">Забыли пароль?</a>
+									<a href="#">Новая регистрация</a>
+								</div>
+							</div>
+						</form>
+					</li>
+					<li class="header-basket">
+						<a href="#">Корзина</a>
+					</li>
 				</ul>
-			</nav>
-			<ul class="user-navigation">
-				<li class="header-search">
-					<a href="#">Поиск</a>
-					<form class="header-search-form" action="#" method="get">
-						<input type="search" name="search" placeholder="Что ищем?">
-					</form>
-				</li>
-				<li class="header-login">
-					<a href="#">Вход</a>
-					<form class="header-login-form" action="#" method="post">
-						<label class="visually-hidden" for="login">Электронная почта</label>
-						<input type="text" name="login" id="login" placeholder="Электронная почта">
-						<label class="visually-hidden" for="password">Пароль</label>
-						<input type="password" name="password" id="password" placeholder="Пароль">
-						<button class="btn login-form-btn" type="submit">Войти</button>
-						<a href="#">Забыли пароль?</a>
-						<a href="#">Новая регистрация</a>
-					</form>
-				</li>
-				<li class="header-basket">
-					<a href="#">Корзина</a>
-				</li>
-			</ul>
+			</div>
 			<div class="header-contacts">
 				<p class="header-contacts-time">С 10 до 20, ежедневно</p>
 				<p class="header-contacts-number">8 812 450-25-25</p>
@@ -183,16 +189,28 @@
 		</div>
 		<div class="map">
 			<h2 class="visually-hidden">Карта</h2>
-			<img src="img/map.jpg" width="1200" height="430">
+			<div class="container">
+				<img src="img/map.jpg" width="1146" height="430">
+			</div>
 			<div class="address">
-				<p>Адрес главного офиса и офлайн магазина:</p>
-				<p>ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
-				
-				<p>Для заказов по телефону:</p>
-				<p><strong>8 812 450-25-25</strong></p>
-				<p>(с 10 до 20 ежедневно)</p>			
+				<p>
+					Адрес главного офиса и офлайн магазина:
+					<br>
+					<span>
+						ул. Большая Конюшенная
+						<br>
+						19/8, Санкт-Петербург
+					</span>
+				</p>
+				<p>
+					Для заказов по телефону:
+					<br>
+					<span class="adress-number">8 812 450-25-25</span>
+					<br>
+					<span class="address-time">(с 10 до 20 ежедневно)</span>
+				</p>
 				<a class="btn address-btn" href="#">Форма обратной связи</a>
-			</div>		
+			</div>
 		</div>
 	</main>
 

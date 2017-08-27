@@ -10,68 +10,74 @@
 <body>
 	<header class="main-header">
 		<div class="container">
-			<nav class="main-navigation">
-				<a class="main-header-logo" href="index.html">
-					<img src="img/logo.svg" width="154" height="64" alt="Логотип «Gllacy»">
-				</a>
-				<ul class="site-navigation">
-					<li class="navigation-item site-navigation-current">
-						<a href="catalog.html">Каталог</a>
-						<ul class="dropdown">
-							<li><a href="#">Новинки</a></li>
-							<li class="dropdown-current"><a href="#">Сливочное</a></li>
-							<li><a href="#">Щербеты</a></li>
-							<li><a href="#">Фруктовый лед</a></li>
-							<li><a href="#">Мелорин</a></li>
-						</ul>
+			<div class="header-navigation-wrap">
+				<nav class="main-navigation">
+					<a class="main-header-logo" href="index.html">
+						<img src="img/logo.svg" width="154" height="64" alt="Логотип «Gllacy»">
+					</a>
+					<ul class="site-navigation">
+						<li class="navigation-item site-navigation-current">
+							<a href="catalog.html">Каталог</a>
+							<ul class="dropdown">
+								<li><a href="#">Новинки</a></li>
+								<li class="dropdown-current"><a href="#">Сливочное</a></li>
+								<li><a href="#">Щербеты</a></li>
+								<li><a href="#">Фруктовый лед</a></li>
+								<li><a href="#">Мелорин</a></li>
+							</ul>
+						</li>
+						<li class="navigation-item"><a href="#">Доставка и оплата</a></li>
+						<li class="navigation-item"><a href="#">О компании</a></li>
+					</ul>
+				</nav>
+				<ul class="user-navigation">
+					<li class="header-search">
+						<a href="#">Поиск</a>
+						<form class="header-search-form" action="#" method="get">
+							<input type="search" name="search" placeholder="Что ищем?">
+						</form>
 					</li>
-					<li class="navigation-item"><a href="#">Доставка и оплата</a></li>
-					<li class="navigation-item"><a href="#">О компании</a></li>
+					<li class="header-login">
+						<a href="#">Вход</a>
+						<form class="header-login-form" action="#" method="post">
+							<label class="visually-hidden" for="login">Электронная почта</label>
+							<input type="text" name="login" id="login" placeholder="Электронная почта">
+							<label class="visually-hidden" for="password">Пароль</label>
+							<input type="password" name="password" id="password" placeholder="Пароль">
+							<div class="header-login-wrap">
+								<button class="btn login-form-btn" type="submit">Войти</button>
+								<div class="header-link-wrap">
+									<a href="#">Забыли пароль?</a>
+									<a href="#">Новая регистрация</a>
+								</div>
+							</div>
+						</form>
+					</li>
+					<li class="header-basket">
+						<a href="#">2 товара</a>
+						<div class="basket-hover">
+							<table class="table-basket">
+								<tr>
+									<td><button class="basket-close" type="button">Закрыть</button></td>
+									<td><img src="img/small-product-1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
+									<td> Пломбир с апельсиновым джемом</td>
+									<td>1,5 кг х <span class="basket-price">200 руб.</span></td>
+									<td>300 руб</td>
+								</tr>
+								<tr>
+									<td><button class="basket-close" type="button">Закрыть</button></td>
+									<td><img src="img/small-product-3.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
+									<td>Клубничный пломбир с присыпкой из белого шоколада</td>
+									<td>1,5 кг х <span class="basket-price">300 руб.</span></td>
+									<td>450 руб</td>
+								</tr>
+							</table>
+							<p><a class="btn basket-btn" href="#">Оформить заказ</a></p>
+							<p><span class="basket-sum">Итого: 750 руб</span></p>		
+						</div>
+					</li>
 				</ul>
-			</nav>
-			<ul class="user-navigation">
-				<li class="header-search">
-					<a href="#">Поиск</a>
-					<form class="header-search-form" action="#" method="get">
-						<input type="search" name="search" placeholder="Что ищем?">
-					</form>
-				</li>
-				<li class="header-login">
-					<a href="#">Вход</a>
-					<form class="header-login-form" action="#" method="post">
-						<label class="visually-hidden" for="login">Электронная почта</label>
-						<input type="text" name="login" id="login" placeholder="Электронная почта">
-						<label class="visually-hidden" for="password">Пароль</label>
-						<input type="password" name="password" id="password" placeholder="Пароль">
-						<button class="btn login-form-btn" type="submit">Войти</button>
-						<a href="#">Забыли пароль?</a>
-						<a href="#">Новая регистрация</a>
-					</form>
-				</li>
-				<li class="header-basket">
-					<a href="#">2 товара</a>
-					<div class="basket-hover">
-						<table class="table-basket">
-							<tr>
-								<td><button class="basket-close" type="button">Закрыть</button></td>
-								<td><img src="img/small-product-1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
-								<td> Пломбир с апельсиновым джемом</td>
-								<td>1,5 кг х <span class="basket-price">200 руб.</span></td>
-								<td>300 руб</td>
-							</tr>
-							<tr>
-								<td><button class="basket-close" type="button">Закрыть</button></td>
-								<td><img src="img/small-product-3.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
-								<td>Клубничный пломбир с присыпкой из белого шоколада</td>
-								<td>1,5 кг х <span class="basket-price">300 руб.</span></td>
-								<td>450 руб</td>
-							</tr>
-						</table>
-						<p><a class="btn basket-btn" href="#">Оформить заказ</a></p>
-						<p><span class="basket-sum">Итого: 750 руб</span></p>		
-					</div>
-				</li>
-			</ul>
+			</div>
 			<div class="header-contacts">
 				<p class="header-contacts-time">С 10 до 20, ежедневно</p>
 				<p class="header-contacts-number">8 812 450-25-25</p>
@@ -87,69 +93,76 @@
 				<li class="breadcrumbs-current">Сливочное</li>
 			</ul>
 			<h1 class="page-title">Сливочное мороженое</h1>
-
 			<section class="filters">
 				<h2 class="visually-hidden">Фильтр товаров</h2>
 				<form class="filter" action="#" method="get">
-					<fieldset>
-						<legend>Сортировка</legend>
-						<select name="sorting">
-							<option value="popular">по популярности</option>
-							<option value="cheap">сначала недорогие</option>
-							<option value="expensive">сначала дорогие</option>
-							<option value="oiliness">по жирности</option>
-						</select>
-					</fieldset>
-					<div class="filter-rang">
-						<span class="filter-price-range">Цена: 100 руб. – 500 руб.</span>
-						<div class="line">
-							<div class="roller"></div>
-							<div class="roller"></div>
+					<div class="filter-wrap">
+						<fieldset class="sorting">
+							<legend>Сортировка</legend>
+							<div class="filter-color-wrap">
+								<select name="sorting">
+									<option value="popular">по популярности</option>
+									<option value="cheap">сначала недорогие</option>
+									<option value="expensive">сначала дорогие</option>
+									<option value="oiliness">по жирности</option>
+								</select>	
+							</div>
+						</fieldset>
+						<div class="filter-rang">
+							<span class="filter-price-range">Цена: 100 руб. – 500 руб.</span>
+							<div class="line">
+								<div class="roller"></div>
+								<div class="roller"></div>
+							</div>
 						</div>
+						<fieldset class="oiliness">
+							<legend>Жирность</legend>
+							<div class="filter-color-wrap">
+								<label>
+									<input class="visually-hidden filter-input filter-input-radio" type="radio" name="oiliness" value="0">
+									0
+								</label>
+								<label>
+									<input class="visually-hidden filter-input filter-input-radio" type="radio" name="oiliness" value="to 10" checked>
+									до 10%
+								</label>
+								<label>
+									<input class="visually-hidden filter-input filter-input-radio" type="radio" name="oiliness" value="to 30">
+									до 30%
+								</label>
+								<label>
+									<input class="visually-hidden filter-input filter-input-radio" type="radio" name="oiliness" value="over 30">
+									выше 30%
+								</label>
+							</div>
+						</fieldset>
+						<fieldset class="fillers">
+							<legend>Наполнители</legend>
+							<div class="filter-color-wrap">
+								<label>
+									<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="chocolate" checked>
+									шоколадные
+								</label>
+								<label>
+									<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="sugar" checked>
+									сахарные присыпки
+								</label>
+								<label>
+									<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="fruits">
+									фрукты
+								</label>
+								<label>
+									<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="syrups">
+									сиропы
+								</label>
+								<label>
+									<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="jams">
+									джемы
+								</label>
+							</div>
+						</fieldset>
+						<button class="filter-btn" type="submin">Применить</button>
 					</div>
-					<fieldset>
-						<legend>Жирность</legend>
-						<label>
-							<input class="visually-hidden filter-input filter-input-radio" type="radio" name="oiliness" value="0">
-							0
-						</label>
-						<label>
-							<input class="visually-hidden filter-input filter-input-radio" type="radio" name="oiliness" value="to 10" checked>
-							до 10%
-						</label>
-						<label>
-							<input class="visually-hidden filter-input filter-input-radio" type="radio" name="oiliness" value="to 30">
-							до 30%
-						</label>
-						<label>
-							<input class="visually-hidden filter-input filter-input-radio" type="radio" name="oiliness" value="over 30">
-							выше 30%
-						</label>
-					</fieldset>
-					<fieldset>
-						<legend>Наполнители</legend>
-						<label>
-							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="chocolate" checked>
-							шоколадные
-						</label>
-						<label>
-							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="sugar" checked>
-							сахарные присыпки
-						</label>
-						<label>
-							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="fruits">
-							фрукты
-						</label>
-						<label>
-							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="syrups">
-							сиропы
-						</label>
-						<label>
-							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="jams">
-							джемы
-						</label>
-					</fieldset>
-					<button class="filter-btn" type="submin">Применить</button>
 				</form>
 			</section>
 
