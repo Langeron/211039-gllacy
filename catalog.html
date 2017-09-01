@@ -32,7 +32,7 @@
 				</nav>
 				<ul class="user-navigation">
 					<li class="header-search">
-						<a href="#">Поиск</a>
+						<a href="#"><span class="visually-hidden">Поиск</span></a>
 						<form class="header-search-form" action="#" method="get">
 							<input type="search" name="search" placeholder="Что ищем?">
 						</form>
@@ -53,27 +53,27 @@
 							</div>
 						</form>
 					</li>
-					<li class="header-basket">
+					<li class="header-basket header-basket-goods">
 						<a href="#">2 товара</a>
 						<div class="basket-hover">
 							<table class="table-basket">
 								<tr>
-									<td><button class="basket-close" type="button">Закрыть</button></td>
+									<td><button class="basket-close" type="button"><span class="visually-hidden">Закрыть</span></button></td>
 									<td><img src="img/small-product-1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
 									<td> Пломбир с апельсиновым джемом</td>
 									<td>1,5 кг х <span class="basket-price">200 руб.</span></td>
 									<td>300 руб</td>
 								</tr>
 								<tr>
-									<td><button class="basket-close" type="button">Закрыть</button></td>
+									<td><button class="basket-close" type="button"><span class="visually-hidden">Закрыть</span></button></td>
 									<td><img src="img/small-product-3.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
 									<td>Клубничный пломбир с присыпкой из белого шоколада</td>
 									<td>1,5 кг х <span class="basket-price">300 руб.</span></td>
 									<td>450 руб</td>
 								</tr>
 							</table>
+							<p><span class="basket-sum">Итого: 750 руб</span></p>	
 							<p><a class="btn basket-btn" href="#">Оформить заказ</a></p>
-							<p><span class="basket-sum">Итого: 750 руб</span></p>		
 						</div>
 					</li>
 				</ul>
@@ -89,7 +89,7 @@
 		<div class="container">
 			<ul class="breadcrumbs">
 				<li><a href="index.html">Главная</a></li>
-				<li><a href="catalog.html">Каталог</a></li>
+				<li><a href="#">Каталог</a></li>
 				<li class="breadcrumbs-current">Сливочное</li>
 			</ul>
 			<h1 class="page-title">Сливочное мороженое</h1>
@@ -99,20 +99,21 @@
 					<div class="filter-wrap">
 						<fieldset class="sorting">
 							<legend>Сортировка</legend>
-							<div class="filter-color-wrap">
-								<select name="sorting">
-									<option value="popular">по популярности</option>
-									<option value="cheap">сначала недорогие</option>
-									<option value="expensive">сначала дорогие</option>
-									<option value="oiliness">по жирности</option>
-								</select>	
-							</div>
+							<select name="sorting">
+								<option value="popular">по популярности</option>
+								<option value="cheap">сначала недорогие</option>
+								<option value="expensive">сначала дорогие</option>
+								<option value="oiliness">по жирности</option>
+							</select>	
 						</fieldset>
 						<div class="filter-rang">
 							<span class="filter-price-range">Цена: 100 руб. – 500 руб.</span>
-							<div class="line">
-								<div class="roller"></div>
-								<div class="roller"></div>
+							<div class="rang-color-wrap">
+								<div class="scale">
+									<div class="bar"></div>
+									<div class="range-roller roller-min"></div>
+									<div class="range-roller roller-max"></div>
+								</div>
 							</div>
 						</div>
 						<fieldset class="oiliness">
@@ -351,13 +352,13 @@
 		</div>
 	</main>
 
-	<footer class="main-footer">
+	<footer class="main-footer footer-inner">
 		<div class="container">
 			<ul class="footer-social">
-				<li><a class="social-btn" href="#">Твиттер</a></li>
-				<li><a class="social-btn" href="#">Инстаграм</a></li>
-				<li><a class="social-btn" href="#">Фейсбук</a></li>
-				<li><a class="social-btn" href="#">Вконтакте</a></li>
+				<li><a class="social-btn twitter" href="#"><span class="visually-hidden">Твиттер</span></a></li>
+				<li><a class="social-btn instagram" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
+				<li><a class="social-btn fb" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+				<li><a class="social-btn vk" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
 			</ul>
 			<nav class="footer-navigation">
 				<ul class="footer-navigation-list">
@@ -369,7 +370,7 @@
 			</nav>
 			<p class="footer-copyright">
 				<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="108" height="39" alt="HTML Academy"></a>
-				Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017
+				<span>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017</span>
 			</p>
 		</div>
 	</footer>
