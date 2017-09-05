@@ -1,6 +1,7 @@
-/*body {
+
+body {
 	position: relative;
-}*/
+}
 
 /*body::before {
 	content: "";
@@ -14,8 +15,8 @@
 	background: url("../gllacy-catalog-1200.jpg") no-repeat center 0;
 }*/
 
-/*
-body::before {
+
+/*body::before {
 	content: "";
 	position: absolute;
 	top: 0;
@@ -25,8 +26,8 @@ body::before {
 	z-index: 99;
 	opacity: 0.5;
 	background: url("../gllacy-index-1200.jpg") no-repeat center 0;
-}
-*/
+}*/
+
 
 * {
 	box-sizing: border-box;
@@ -52,6 +53,7 @@ img {
 	max-width: 100%;
 	height: auto;
 }
+
 body > input[type="radio"] {
 	display: none;
 }
@@ -270,6 +272,11 @@ li[class^="header"] > a:focus {
 	outline: 0;
 }
 
+li[class$="goods"] > a {
+	background-color: #f7f6f3;
+	color: #333333;
+}
+
 .header-search {
 	padding-top: 4px;
 }
@@ -280,7 +287,8 @@ li[class^="header"] > a:focus {
 	background: url("../img/loupe.svg") no-repeat center;
 }
 
-.header-search a:hover {
+.header-search a:hover,
+.header-search a:focus {
 	background: url("../img/loupe-black.svg") no-repeat center;
 }
 
@@ -289,7 +297,8 @@ li[class^="header"] > a:focus {
 	background: url("../img/enter-white.svg") no-repeat 16px center;
 }
 
-.header-login > a:hover {
+.header-login > a:hover,
+.header-login > a:focus {
 	background: url("../img/enter-black.svg") no-repeat 16px center;
 }
 
@@ -298,13 +307,14 @@ li[class^="header"] > a:focus {
 	background: url("../img/basket.svg") no-repeat 16px center;
 }
 
-.header-basket-catalog > a {
+.header-basket-goods > a {
 	padding: 8px 16px 8px 44px;
 	background: url("../img/basket-red.svg") no-repeat 16px center;
 	min-width: 116px;	
 }
 
-.header-basket > a:hover {
+.header-basket > a:hover,
+.header-basket > a:focus {
 	background: url("../img/basket-red.svg") no-repeat 16px center;
 }
 
@@ -436,7 +446,7 @@ input[type="email"]:focus,
 }
 
 .header-basket:hover .basket-hover,
-.header-basket-catalog:hover .basket-hover {
+.header-basket-goods:hover .basket-hover {
 	display: flex;
 }
 
@@ -501,8 +511,6 @@ input[type="email"]:focus,
 	justify-content: space-between;
 }
 
-
-
 .breadcrumbs {
 	align-self: flex-end;
 	display: flex;
@@ -516,6 +524,7 @@ input[type="email"]:focus,
 .breadcrumbs li{
 	margin-right: 20px;
 }
+
 .breadcrumbs a,
 .breadcrumbs-current {
 	font-size: 14px;
@@ -696,7 +705,7 @@ input[type="email"]:focus,
 	position: relative;
 	width: 267px;
 	margin-right: 26px;
-	margin-bottom: 38px;
+	margin-bottom: 33px;
 }
 
 .catalog-item:nth-child(4n) {
@@ -712,7 +721,12 @@ input[type="email"]:focus,
 .catalog-item-image {
 	padding: 0;
 	margin: 0;
-	}
+	margin-bottom: 8px;
+}
+
+.bestseller {
+	margin-bottom: 1px;
+}
 
 .bestseller .catalog-item-image::after {
 	content: "";
@@ -725,7 +739,6 @@ input[type="email"]:focus,
 	left: 0;
 }
 
-
 .catalog-title {
 	font-weight: 500;
 	text-align: center;
@@ -733,7 +746,9 @@ input[type="email"]:focus,
 	line-height: 22px;
 	padding: 0;
 	margin: 0;
-	margin-top: 9px;
+	margin-left: 5px;
+	width: 96%;
+	margin-bottom: 5px
 }
 
 .catalog-title span {
@@ -746,6 +761,7 @@ input[type="email"]:focus,
 	line-height: 45px;
 	z-index: 3;
 	top: 165px;
+	left: -1px;
 }
 
 .catalog-item-price::after {
@@ -754,7 +770,7 @@ input[type="email"]:focus,
 	height: 40px;
 	background: url("../img/ruble.svg") no-repeat center;
 	position: absolute;
-	top: 4px;
+	top: 2px;
 	left: 78px;
 }
 
@@ -803,7 +819,7 @@ input[type="email"]:focus,
 	color: #323232;
 	font-weight: normal;
 	border-radius: 15px;
-	margin-bottom: 40px;
+	margin-bottom: 39px;
 }
 
 .features h1 {
@@ -911,7 +927,7 @@ input[type="email"]:focus,
 	display: block;
 	padding: 30px 20px;
 	width: 550px;
-	min-height: 210px;
+	height: 100%;
 	background: #f8f7f4;
 	border-radius: 10px;
 }
@@ -945,12 +961,12 @@ input[type="email"]:focus,
 .address {
 	position: absolute;
 	width: 303px;
-	padding: 32px 25px;
+	padding: 31px 25px;
 	min-height: 305px;
 	border-radius: 15px;
 	color: #323232;
 	background: #ffffff;
-	top: 60px;
+	top: 62px;
 	right: 27px;
 }
 
@@ -996,7 +1012,7 @@ input[type="email"]:focus,
 }
 
 .filter {
-	margin-bottom: 25px;
+	margin-bottom: 23px;
 }
 
 .filter-wrap {
@@ -1014,7 +1030,7 @@ input[type="email"]:focus,
 }
 
 .filters legend {
-	margin-bottom: 8px;
+	margin-bottom: 7px;
 	margin-left: 15px;
 	font-size: 14px;
 	line-height: 16px;
@@ -1037,7 +1053,9 @@ input[type="email"]:focus,
 
 .sorting select {
 	background: rgba(248, 247, 244, 0.2) url("../img/select-arrow.svg") no-repeat 170px center;
-	padding: 8px 35px 10px 17px;
+	padding-left: 15px;
+	height: 35px;
+	width: 193px;
 	border-radius: 18px;
 	border: none;
 	color: #fff;
@@ -1061,7 +1079,7 @@ input[type="email"]:focus,
 
 .filter-price-range {
 	display: block;
-	margin-left: 13px;
+	margin-left: 15px;
 	margin-bottom: 8px;
 }
 
@@ -1101,8 +1119,7 @@ input[type="email"]:focus,
 
 .filter-rang .range-roller:hover,
 .filter-rang .range-roller:focus {
-	width: 22px;
-	height: 22px;
+	transform: scale(1.1);
 }
 
 .filter-rang .roller-min {
@@ -1127,6 +1144,12 @@ input[type="email"]:focus,
 	background: url("../img/radio-off.svg") no-repeat center;
 }
 
+.oiliness input[type="radio"]:focus + .filter-radio,
+.fillers input[type="checkbox"]:focus + .filter-checkbox{
+	border-color: #663d15;
+	outline: 5px auto -webkit-focus-ring-color;
+}
+
 .oiliness input[type="radio"]:checked + .filter-radio {
 	background: url("../img/radio-on.svg") no-repeat center;
 }
@@ -1136,15 +1159,15 @@ input[type="email"]:focus,
 	width: 24px;
 	height: 24px;
 	position: absolute;
-	left: -34px;
+	transform: translateX(-32px);
 	top: -2px;
-	background: url("../img/checkbox-off.svg") no-repeat center;
+	background: url("../img/checkbox-off.svg") no-repeat 0 center;
 }
 
 .fillers input[type="checkbox"]:checked + .filter-checkbox {
-	background: url("../img/checkbox-on.svg") no-repeat center;	
+	background: url("../img/checkbox-on.svg") no-repeat 0 center;	
 	position: absolute;
-	left: -33px;
+	transform: translateX(-32.25px);
 }
 
 .fillers {
@@ -1154,7 +1177,7 @@ input[type="email"]:focus,
 .filters label {
 	position: relative;
 	font-size: 16px;
-	line-height: 18px;
+	line-height: 21px;
 	font-weight: 500;
 	opacity: 0.8;
 }
@@ -1181,14 +1204,14 @@ input[type="email"]:focus,
 }
 
 .filter-fillers-wrap label:first-child {
-	margin-left: 47px;
+	margin-left: 48px;
 }
 
 .filter .filter-btn {
-	margin-top: 22px;
-	padding: 6px 25px;
+	align-self: baseline;
+	margin-top: 23px;
+	padding: 8px 24px 8px 27px;
 	border: 2px solid #ffffff;
-	height: 36px;
 	font-size: 16px;
 	line-height: 18px;
 	color: #ffffff;
@@ -1217,7 +1240,7 @@ input[type="email"]:focus,
 	margin: 0;
 	padding: 0;
 	margin-top: 44px;
-	margin-bottom: 31px;
+	margin-bottom: 30px;
 	font-size: 16px;
 	line-height: 18px;
 	font-weight: 500;
@@ -1237,8 +1260,9 @@ input[type="email"]:focus,
 	line-height: 26px;
 }
 
-.pagination-disable {
+.pagination-disable	 a {
 	opacity: 0.2;
+	cursor: default;
 }
 
 .pagination-arrow-prev a {
@@ -1249,7 +1273,7 @@ input[type="email"]:focus,
 	transform: rotate(180deg);
 }
 
-.pagination-arrow-next {
+.pagination-arrow-next a {
 	display: inline-block;
 	width: 18px;
 	height: 26px;
@@ -1263,7 +1287,7 @@ input[type="email"]:focus,
 }
 
 .pagination-item a:hover,
-.pagination-arrow a:hover {
+.pagination-item a:focus {
 	background: rgba(255, 255, 255, 0.2);
 	border-radius: 50%;
 }
@@ -1281,8 +1305,20 @@ input[type="email"]:focus,
 	min-height: 100px;
 }
 
-.footer-inner  .container{
-	border-top: 1px solid rgba(255, 255, 255, 0.3);
+.footer-inner  {
+	position: relative;
+}
+
+.footer-inner .container::before {
+	content: "";
+	width: 1146px;
+	height: 1px;
+	background: rgb(255, 255, 255);
+	position: absolute;
+	left: 50%;
+	top: -6px;
+	margin-left: -573px;
+	opacity: 0.3;
 }
 
 .footer-navigation {
