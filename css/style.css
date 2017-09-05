@@ -1,9 +1,9 @@
-
+/*
 body {
 	position: relative;
 }
 
-/*body::before {
+body::before {
 	content: "";
 	position: absolute;
 	top: 0;
@@ -13,8 +13,8 @@ body {
 	z-index: 99;
 	opacity: 0.5;
 	background: url("../gllacy-catalog-1200.jpg") no-repeat center 0;
-}*/
-
+}
+*/
 
 /*body::before {
 	content: "";
@@ -29,8 +29,12 @@ body {
 }*/
 
 
-* {
-	box-sizing: border-box;
+html { 
+	box-sizing: border-box; 
+}
+
+*, *:before, *:after { 
+	box-sizing: inherit; 
 }
 
 body {
@@ -724,10 +728,6 @@ input[type="email"]:focus,
 	margin-bottom: 8px;
 }
 
-.bestseller {
-	margin-bottom: 1px;
-}
-
 .bestseller .catalog-item-image::after {
 	content: "";
 	width: 61px;
@@ -819,7 +819,7 @@ input[type="email"]:focus,
 	color: #323232;
 	font-weight: normal;
 	border-radius: 15px;
-	margin-bottom: 39px;
+	margin-bottom: 38px;
 }
 
 .features h1 {
@@ -880,7 +880,7 @@ input[type="email"]:focus,
 .blog-subscription {
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 40px;
+	margin-bottom: 42px;
 }
 
 .blog,
@@ -892,7 +892,8 @@ input[type="email"]:focus,
 }
 
 .blog {
-	background: #ffffff url("../img/Strawberry.jpg") no-repeat;
+	background: #ffffff url("../img/Strawberry.jpg") no-repeat 202px -31px;
+/*	background-size: contain;*/
 }
 
 .blog h3 {
@@ -925,7 +926,7 @@ input[type="email"]:focus,
 
 .subscription-wrap {
 	display: block;
-	padding: 30px 20px;
+	padding: 30px 20px 30px 21px;
 	width: 550px;
 	height: 100%;
 	background: #f8f7f4;
@@ -966,7 +967,7 @@ input[type="email"]:focus,
 	border-radius: 15px;
 	color: #323232;
 	background: #ffffff;
-	top: 62px;
+	top: 60px;
 	right: 27px;
 }
 
@@ -1210,7 +1211,7 @@ input[type="email"]:focus,
 .filter .filter-btn {
 	align-self: baseline;
 	margin-top: 23px;
-	padding: 8px 24px 8px 27px;
+	padding: 7px 24px 8px 27px;
 	border: 2px solid #ffffff;
 	font-size: 16px;
 	line-height: 18px;
@@ -1218,6 +1219,7 @@ input[type="email"]:focus,
 	background-color: rgba(255, 255, 255, 0.2);
 	border-radius: 18px;
 	text-align: center;
+	cursor: pointer;
 }
 
 .filter-btn:hover,
@@ -1467,7 +1469,8 @@ input[type="email"]:focus,
 }
 
 .modal-feedback {
-	position: absolute;
+	display: none;
+	position: fixed;
 	width: 478px;
 	height: 438px;
 	background: #f8f7f4;
@@ -1475,6 +1478,7 @@ input[type="email"]:focus,
 	padding: 18px 23px;
 	left: 50%;
 	margin-left: -239px;
+	top: 30%;
 	z-index: 10;
 }
 
@@ -1515,3 +1519,18 @@ input[type="email"]:focus,
 	right: 26px;
 	cursor: pointer;
 }
+
+.modal-show {
+	display: block;
+	animation: modal 1s;
+}
+
+@keyframes modal  {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
