@@ -2,10 +2,11 @@
 <html lang="ru">
 <head>
 	<meta charset="utf-8">
+	<meta name="format-detection" content="telephone=no">
 	<title>HTML Academy: Глейси</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
-	<link rel="stylesheet"  href="css/normalize.css">
-	<link rel="stylesheet"  href="css/style.css">
+	<link rel="stylesheet" href="css/normalize.min.css">
+	<link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
 	<input type="radio" id="btn-one" name="toggle" checked>
@@ -170,7 +171,7 @@
 					<h1>Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h1>
 					<div class="features-list">
 						<p class="features-item">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
-						<p class="features-item">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+						<p class="features-item">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
 						<p class="features-item">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
 						<p class="features-item">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
 					</div>
@@ -196,32 +197,30 @@
 						</div>
 					</div>
 				</section>
+
 			</div>
 			<div class="map">
 				<h2 class="visually-hidden">Карта</h2>
-				<div class="container">
-					<img src="img/map.jpg" width="1200" height="430" alt="ул. Большая Конюшенная
-					19/8, Санкт-Петербург">
-					<div class="address">
-						<p>
-							Адрес главного офиса<br> и офлайн магазина:
+				<div id="map" class="ymap"></div>
+				<div class="address">
+					<p>
+						Адрес главного офиса<br> и офлайн магазина:
+						<br>
+						<span>
+							ул. Большая Конюшенная
 							<br>
-							<span>
-								ул. Большая Конюшенная
-								<br>
-								19/8, Санкт-Петербург
-							</span>
-						</p>
-						<p>
-							Для заказов по телефону:
-							<br>
-							<span class="address-number">8 812 450-25-25</span>
-							<br>
-							<span class="address-time">(с 10 до 20 ежедневно)</span>
-						</p>
-						<a class="btn address-btn" href="#">Форма обратной связи</a>
-					</div>
-				</div>	
+							19/8, Санкт-Петербург
+						</span>
+					</p>
+					<p>
+						Для заказов по телефону:
+						<br>
+						<span class="address-number">8 812 450-25-25</span>
+						<br>
+						<span class="address-time">(с 10 до 20 ежедневно)</span>
+					</p>
+					<a class="btn address-btn" href="#">Форма обратной связи</a>
+				</div>		
 			</div>
 		</main>
 
@@ -248,19 +247,23 @@
 			</div>
 		</footer>
 	</div>
-	<div class="modal modal-feedback">
-		<span class="feedback-text">Мы обязательно вам ответим!</span>
-		<form action="#" method="post">
-			<label class="visually-hidden" for="name">Имя</label>
-			<input type="text" name="name" id="name" placeholder="Как вас зовут?">
-			<label class="visually-hidden" for="mail">Почта</label>
-			<input type="text" name="mail" id="mail" placeholder="Ваша почта для ответа?">
-			<label class="visually-hidden" for="modal-text">Напишите что-нибудь</label>
-			<textarea placeholder="Напишите что-нибудь..." id="modal-text"></textarea>
-			<button class="btn feedback-btn" type="submit">Отправить</button>
-		</form>
-		<button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
+	<div class="wrap-blackout">
+		<div class="modal modal-feedback">
+			<span class="feedback-text">Мы обязательно вам ответим!</span>
+			<form action="#" method="post">
+				<label class="visually-hidden" for="name">Имя</label>
+				<input type="text" name="name" id="name" placeholder="Как вас зовут?">
+				<label class="visually-hidden" for="mail">Почта</label>
+				<input type="text" name="mail" id="mail" placeholder="Ваша почта для ответа?">
+				<label class="visually-hidden" for="modal-text">Напишите что-нибудь</label>
+				<textarea placeholder="Напишите что-нибудь..." id="modal-text"></textarea>
+				<button class="btn feedback-btn" type="submit">Отправить</button>
+			</form>
+			<button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
+		</div>
 	</div>
-	<script src="js/script.js"></script>
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
+	</script>
+	<script src="js/script.min.js"></script>
 </body>
 </html>
