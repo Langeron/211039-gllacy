@@ -10,6 +10,7 @@ link.addEventListener("click", function (evt) {
 	evt.preventDefault();
 	feedbackPopup.classList.add("modal-show");
 	blackout.classList.add("blackout");
+	login.focus();
 });
 
 modalClose.addEventListener("click", function (evt) {
