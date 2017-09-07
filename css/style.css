@@ -367,7 +367,7 @@ input[type="text"],
 input[type="password"],
 input[type="email"],
 .modal-feedback textarea {
-	padding: 10px 0 10px 15px;
+	padding: 10px 15px 10px 15px;
 	border-radius: 6px;
 	font-size: 16px;
 	font-weight: normal;
@@ -437,7 +437,7 @@ input[type="email"]:focus,
 	box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
 	right: 0px;
 	top: 37px;
-	z-index: 1;
+	z-index: 3;
 }
 
 .header-login:hover .header-login-form {
@@ -1209,6 +1209,10 @@ input[type="email"]:focus,
 	appearance: none;
 }
 
+.sorting select::-ms-expand {
+    display: none;
+}
+
 .sorting select:hover,
 .sorting select:focus {
 	background: #fff url("../img/select-arrow-black.svg") no-repeat 170px center;
@@ -1799,6 +1803,11 @@ input[type="email"]:focus,
 	width: 100%;
 	height: 430px;
 	margin-bottom: 5px;
+}
+
+.ymap img {
+	position: absolute;
+	left: calc(50% - 600px);
 }
 
 .blackout {
