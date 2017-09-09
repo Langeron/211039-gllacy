@@ -1051,7 +1051,7 @@ input[type="email"]:focus,
 }
 
 .subscription {
-	background: url("../img/border.png");
+	background: url("../img/bg-post.svg");
 	padding: 5px;
 }
 
@@ -1353,7 +1353,8 @@ input[type="email"]:focus,
 	opacity: 1;
 }
 
-.filters input:disabled + .filter-checkbox {
+.filters input:disabled + .filter-checkbox,
+.filters input:disabled + .filter-radio {
 	opacity: 0.4;
 }
 
