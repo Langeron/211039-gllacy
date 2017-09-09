@@ -1353,17 +1353,17 @@ input[type="email"]:focus,
 	opacity: 1;
 }
 
-.filters input:disabled + .filter-checkbox,
-.filters input:disabled + .filter-radio {
-	opacity: 0.4;
-}
-
 .filter-oiliness-wrap label:first-child {
 	margin-left: 44px;
 }
 
 .filter-fillers-wrap label:first-child {
 	margin-left: 48px;
+}
+
+.filters input:disabled + .filter-checkbox,
+.filters input:disabled + .filter-radio {
+	opacity: 0.4;
 }
 
 .filter .filter-btn {
