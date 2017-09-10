@@ -1128,15 +1128,15 @@ input[type="email"]:focus,
 	font-weight: bold;
 	font-size: 18px;
 	line-height: 24px;
-	margin-bottom: 15px;
+	margin-bottom: 17px;
 }
 
-.address .address-contact {
+.address .address-second-title {
 	width: 180px;
 	font-size: 14px;
 	line-height: 20px;
 	font-weight: normal;
-	margin-bottom: 7px;
+	margin-bottom: 5px;
 }
 
 .address .address-number {
@@ -1144,6 +1144,7 @@ input[type="email"]:focus,
 	font-size: 18px;
 	line-height: 22px;
 	margin-bottom: 1px;
+	font-weight: bold;
 }
 
 .address .address-time {
